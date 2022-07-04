@@ -1,0 +1,2 @@
+Payscribe Webhook Url: https://meetglobalresources.com/api/receive_payscribe_webhooks
+Providus Webhook Url: https://meetglobalresources.com/api/receive_providus_webhooks

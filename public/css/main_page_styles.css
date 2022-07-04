@@ -1,0 +1,275 @@
+body, html {
+  height: 100%;
+}
+
+body{
+  
+  font-family: 'Montserrat', sans-serif;
+  padding: 0;
+  color: #000;
+  /*box-shadow: 0px 10px 20px -5px rgba(0,0,0,.5); */
+}
+
+#ourServiceSection .serviceColumn .serviceColumnSecondPart{
+  padding: 20px;
+}
+
+#ourServiceSection .serviceColumn .serviceColumnSecondPart .columnText{
+  /*text-transform: uppercase;*/
+  /*font-weight: bold;*/
+  font-size: 12px;
+  /*position: relative;*/
+  /*padding: 15px 0;*/
+  /*margin-bottom: 10px;*/
+
+}
+
+#ourServiceSection .serviceColumn .serviceColumnSecondPart .columnTitle{
+  text-transform: uppercase;
+  /*font-weight: bold;*/
+  font-size: 20px;
+  position: relative;
+  padding: 15px 0;
+  margin-bottom: 20px;
+
+}
+
+#ourServiceSection .serviceColumn .serviceColumnSecondPart .columnTitle:before{
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 0;
+  right: 0;
+  margin: -2px auto;
+  position: absolute;
+  width: 40px;
+  background-color: #47a44b;
+}
+  
+#ourServiceSection .serviceColumn .serviceColumnFirstPart .imageBackground{
+  /*display: none;*/
+  height: 100%;
+  /*position: absolute;*/
+  margin-left: 25px;
+  margin-right: 25px;
+  margin-top: -40px;
+  transition: margin-top 1s;
+}
+
+#ourServiceSection .serviceColumn .serviceColumnFirstPart{
+  display: none;
+  /*background: #47a44b;*/
+  height: 45%;
+  /*position: relative;*/
+}
+
+#ourServiceSection .serviceColumn .serviceColumnSecondPart{
+  /*height: 75%;*/
+  transition: margin-top 1s;
+}
+
+
+#ourServiceSection .serviceColumn{
+  cursor: pointer;
+  min-height: 300px;
+  margin: 40px 20px 40px 20px;
+}
+
+#ourServiceSection .serviceColumn:hover .serviceColumnFirstPart .imageBackground{
+  margin-top: -60px;
+}
+
+#ourServiceSection .serviceColumn:hover .serviceColumnSecondPart{
+  margin-top: 20px;
+}
+
+
+#ourServiceSection{
+  margin-top: 40px;
+}
+
+.sectionSubHead{
+  text-transform: uppercase;
+  /*font-weight: bold;*/
+  font-size: 28px;
+  position: relative;
+  padding: 15px 0;
+  margin-bottom: 70px;
+
+}
+
+.sectionSubHead:before{
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 0;
+  right: 0;
+  margin: -2px auto;
+  position: absolute;
+  width: 40px;
+  background-color: #47a44b;
+}
+
+#topNavbar{
+  /*padding-top: 20px;*/
+  color: #fff;
+  transition: background 0.02s;
+}
+
+#topNavbar .navbar-brand .companyName{
+  color: #fff;
+  font-weight: bold;
+}
+
+#backgroundPlacement{
+  background:linear-gradient(rgba(0, 0, 0,0.6),rgba(0, 0, 0,0.6)), url('../images/pexels-andrea-piacquadio-3768131.webp') no-repeat center center ;
+  -webkit-background-size:cover;
+  -moz-background-size:cover;
+  background-size: cover;
+  -o-background-size:cover;
+  height: 100%;
+}
+
+
+/*a:after {    
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: #fff;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+a:hover:after { 
+  width: 100%; 
+  left: 0; 
+}*/
+
+@media screen and (max-width: 992px) {
+  .navbar .navbar-nav#topNavbarUl{
+    background: #47a44b;
+  }
+}
+
+#backgroundPlacement #topNavbar #navbarResponsive .navbar-nav .nav-item a.active:after{
+  width: 100%; 
+  left: 0; 
+  
+}
+#backgroundPlacement #topNavbar #navbarResponsive .navbar-nav .nav-item a{
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+  /*letter-spacing: 0.15em;*/
+  
+  display: inline-block;
+  padding: 15px 20px;
+  position: relative;
+  font-size: 14px;
+}
+
+#backgroundPlacement #topNavbar #navbarResponsive .navbar-nav .nav-item a:after{
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: #47a44b;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+
+#backgroundPlacement #topNavbar #navbarResponsive .navbar-nav .nav-item a.inactive:hover:after{
+  width: 100%; 
+  left: 0; 
+}
+
+#navbarResponsive > ul > li.nav-item > a{
+  color: #fff;
+}
+
+
+#navbarResponsive > ul > li > a :hover{
+  color: #9c27b0;
+}
+
+body > div > div > div > h1.head{
+  font-size: 43px;
+  text-transform: uppercase;
+}
+
+.sub-head{
+  text-transform: uppercase;
+  border-bottom: 2px solid #9c27b0;
+  font-size: 38px;
+  padding-bottom: 20px;
+}
+
+.sub-sub-head{
+  text-transform: uppercase;
+  border-bottom: 2px solid #9c27b0;
+  font-size: 30px;
+  padding-bottom: 20px;
+}
+
+#about-us > p.section-text{
+  line-height: 1.7;
+  letter-spacing: 1px;
+  text-transform: capitalize;
+  font-size: 16px;
+}
+.spinner{
+  position: absolute; 
+  right: 25px; 
+  top: 13px;
+  width: 20px;
+    height: 20px;
+    display: none;
+}
+
+.form-error{
+  color: red;
+  font-style: italic;
+  font-size: 15px;
+  font-weight: bold;
+  background-color: #fff;
+}
+.btn-green{
+  font-weight: bold;
+  background : #47a44b;
+  color: #fff;
+  border: #47a44b;
+  cursor: pointer;
+  display: inline-block;
+    /*font-weight: 400;*/
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    user-select: none;
+    border: 1px solid transparent;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: .25rem;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+        padding: 10px 10px;
+    border-radius: 3px;
+    font-size: 19px;
+    text-decoration: none;
+
+}
+ 
+a#whyOliveCareBtn.btn-green:hover{
+  text-decoration: none;
+  background : #fff;
+  color: #47a44b;
+  border: #fff;
+  transition: background 1s ;
+}

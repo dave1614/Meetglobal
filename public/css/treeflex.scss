@@ -1,0 +1,140 @@
+/* setting a size in em makes sure that the gap scales too with the scaling factor */
+.tf-tree {
+  overflow: auto;
+  font-size: 16px;
+}
+.tf-tree * {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+.tf-tree ul {
+  display: inline-flex;
+}
+.tf-tree li {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 0 1em;
+}
+.tf-tree li ul {
+  margin: 2em 0;
+}
+.tf-tree li li:before {
+  display: block;
+  position: absolute;
+  width: 100%;
+  left: calc(0% - 0.03125em);
+  top: calc(-1em - 0.03125em);
+  content: '';
+  border-top: 0.0625em solid #000;
+  height: 0.0625em;
+}
+.tf-tree li li:first-child:before {
+  left: calc(50% - 0.03125em);
+  max-width: calc(100% - 50% + 0.0625em);
+}
+.tf-tree li li:last-child:before {
+  left: auto;
+  right: calc(50% - 0.03125em);
+  max-width: calc(100% - 50% + 0.0625em);
+}
+.tf-tree li li:only-child:before {
+  display: none;
+}
+.tf-tree li li:only-child > .tf-node-content:before, .tf-tree li li:only-child > .tf-nc:before {
+  height: calc(1em + 0.0625em);
+  top: calc(-1em - 0.0625em);
+}
+.tf-tree .tf-node-content, .tf-tree .tf-nc {
+  position: relative;
+  display: inline-block;
+  border: 0.0625em solid #000;
+  padding: 0.5em 1em;
+}
+.tf-tree .tf-node-content:before, .tf-tree .tf-nc:before {
+  position: absolute;
+  display: block;
+  height: 1em;
+  left: calc(50% - 0.03125em);
+  top: calc(-1em - 0.03125em);
+  content: '';
+  border-left: 0.0625em solid #000;
+  width: 0.0625em;
+}
+.tf-tree .tf-node-content:after, .tf-tree .tf-nc:after {
+  position: absolute;
+  display: block;
+  height: 1em;
+  left: calc(50% - 0.03125em);
+  top: calc(100% + 0.03125em);
+  content: '';
+  border-left: 0.0625em solid #000;
+  width: 0.0625em;
+}
+.tf-tree .tf-node-content:only-child:after, .tf-tree .tf-nc:only-child:after {
+  display: none;
+}
+.tf-tree > ul > li > .tf-node-content:before, .tf-tree > ul > li > .tf-nc:before {
+  display: none;
+}
+.tf-tree.tf-gap-sm li {
+  padding: 0 0.6em;
+}
+.tf-tree.tf-gap-sm li > .tf-node-content:before, .tf-tree.tf-gap-sm li > .tf-nc:before {
+  height: 0.6em;
+  top: -0.6em;
+}
+.tf-tree.tf-gap-sm li > .tf-node-content:after, .tf-tree.tf-gap-sm li > .tf-nc:after {
+  height: 0.6em;
+}
+.tf-tree.tf-gap-sm li ul {
+  margin: 1.2em 0;
+}
+.tf-tree.tf-gap-sm li li:before {
+  top: calc(-0.6em - 0.03125em);
+}
+.tf-tree.tf-gap-sm li li:only-child > .tf-node-content:before, .tf-tree.tf-gap-sm li li:only-child > .tf-nc:before {
+  height: calc(0.6em + 0.0625em);
+  top: calc(-0.6em - 0.0625em);
+}
+.tf-tree.tf-gap-lg li {
+  padding: 0 1.5em;
+}
+.tf-tree.tf-gap-lg li > .tf-node-content:before, .tf-tree.tf-gap-lg li > .tf-nc:before {
+  height: 1.5em;
+  top: -1.5em;
+}
+.tf-tree.tf-gap-lg li > .tf-node-content:after, .tf-tree.tf-gap-lg li > .tf-nc:after {
+  height: 1.5em;
+}
+.tf-tree.tf-gap-lg li ul {
+  margin: 3em 0;
+}
+.tf-tree.tf-gap-lg li li:before {
+  top: calc(-1.5em - 0.03125em);
+}
+.tf-tree.tf-gap-lg li li:only-child > .tf-node-content:before, .tf-tree.tf-gap-lg li li:only-child > .tf-nc:before {
+  height: calc(1.5em + 0.0625em);
+  top: calc(-1.5em - 0.0625em);
+}
+.tf-tree li.tf-dotted-children .tf-node-content:before, .tf-tree li.tf-dotted-children .tf-nc:before, .tf-tree li.tf-dotted-children .tf-node-content:after, .tf-tree li.tf-dotted-children .tf-nc:after {
+  border-left-style: dotted;
+}
+.tf-tree li.tf-dotted-children li:before {
+  border-top-style: dotted;
+}
+.tf-tree li.tf-dotted-children > .tf-node-content:before, .tf-tree li.tf-dotted-children > .tf-nc:before {
+  border-left-style: solid;
+}
+.tf-tree li.tf-dashed-children .tf-node-content:before, .tf-tree li.tf-dashed-children .tf-nc:before, .tf-tree li.tf-dashed-children .tf-node-content:after, .tf-tree li.tf-dashed-children .tf-nc:after {
+  border-left-style: dashed;
+}
+.tf-tree li.tf-dashed-children li:before {
+  border-top-style: dashed;
+}
+.tf-tree li.tf-dashed-children > .tf-node-content:before, .tf-tree li.tf-dashed-children > .tf-nc:before {
+  border-left-style: solid;
+}

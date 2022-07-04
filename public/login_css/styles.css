@@ -1,0 +1,333 @@
+/*html, 
+body {
+    min-height: 100%;
+}*/
+
+body{
+  /*background:linear-gradient(rgba(0, 0, 0,0.5),rgba(0, 0, 0,0.5)), url('../images/home_page_background.jpg') no-repeat center center fixed;*/
+  /*-webkit-background-size:cover;
+  -moz-background-size:cover;
+  background-size: cover;
+  -o-background-size:cover;*/ /*#47a44b*/
+  background: #f2f2f2;
+  font-family: 'Poppins', sans-serif;
+  padding: 0;
+  color: #000;
+  /*box-shadow: 0px 10px 20px -5px rgba(0,0,0,.5); */
+  /*min-height: 700px;*/
+}
+
+.myAnimations {
+    animation-name: fadeInDown, fadeOutUp;
+    -webkit-animation-name: fadeInDown, fadeOutUp;
+
+
+
+    /*
+    you can set different proporties to different animations too:
+    1s to bounce
+    2s to flash
+    3s to pulse
+    */
+
+    animation-duration: 1s, 2s, 3s;
+    -webkit-animation-duration: 1s, 2s, 3s;
+}
+
+.sign-up-btn{
+  color: #47a44b;
+  padding: 7px;
+  padding-left: 20px;
+  padding-right: 20px;
+  cursor: pointer;
+}
+
+.btn-seperator span{
+  padding: 0 10px;
+  background: #fff;
+  color: #606060;
+}
+
+.btn-seperator{
+  width: 100%;
+    text-align: center;
+    border-bottom: 1px solid #e0e0e0;
+    line-height: .1em;
+    font-weight: 300;
+}
+
+form .btn.btn-submit{
+  background-color: #47a44b;
+  border-color: #47a44b;
+  color: #fff;
+
+}
+
+form button{
+  margin-top: 50px;
+  border-radius: 28px;
+}
+
+form .form-group{
+  margin-bottom: 20px;
+  font-size: 14px;
+}
+
+form .form-group input{
+  border-radius: 28px;
+}
+
+#login-form, #signup-form, #signup-otp-form{
+  margin-top: 40px;
+  margin-bottom: 50px;
+  padding: 0;
+}
+
+
+
+.heading-text{
+  font-size: 25px;
+  color: #47a44b;
+  /*font-weight: bold;*/
+  text-transform: uppercase;
+}
+
+footer#main-page-footer .divider{
+  background: #fff;
+  height: 3px;
+  margin-top: 45px;
+  border-radius: 8px;
+}
+
+footer#main-page-footer .social-media-div img{
+  width: 30px;
+  height: 30px;
+  background: #fff;
+  /*border-radius: 2px;*/
+  margin-right: 10px;
+}
+
+
+footer#main-page-footer .social-media-div .social-media-heading{
+  font-weight: bold;
+  font-size: 26px;
+  margin-bottom: 20px;
+}
+
+footer#main-page-footer .warning-div .warning-text{
+  font-size: 14px;
+  line-height: 1.4;
+  font-weight: bold;
+  letter-spacing: 0.4px;
+  border-bottom: 2px dotted #fff;
+  padding-bottom: 30px;
+}
+
+
+footer#main-page-footer .warning-div .warning-heading{
+  font-size: 26px;
+  font-weight: bold;
+  margin-bottom: 30px;
+  
+  letter-spacing: 1.3px;
+}
+
+footer#main-page-footer .warning-div{
+  margin-top: 70px;
+}
+
+footer#main-page-footer .contact-us-div .contact-us-detail-p{
+  margin-bottom: 5px;
+}
+
+footer#main-page-footer .contact-us-div .address-icon{
+  font-size: 15px;
+  
+}
+
+footer#main-page-footer .contact-us-div .address-text{
+  font-size: 15px;
+  text-transform: capitalize;
+}
+
+.border-bottom-white{
+  border-radius: 15px;
+  width: 120px;
+  background: #fff;
+  height: 4px;
+  display: block;
+  margin-top: 10px;
+}
+
+footer#main-page-footer .contact-us-div .contact-us-heading{
+  font-weight: bold;
+  font-size: 26px;
+}
+
+footer#main-page-footer{
+  /*min-height: 300px; */
+  /*position: absolute;
+  bottom: 0;
+  width: 100%;*/
+  background: #fff; 
+  margin-top: 100px; 
+  padding: 15px 20px 10px 20px; 
+  color: #fff;
+}
+
+#main-content-section #introductory-content-text{
+  text-transform: capitalize; 
+  color: #47a44b;
+  margin-top: 50px;
+
+}
+
+.border-bottom-first-container {
+  position: relative;
+}
+.border-bottom-second-container{
+
+  
+  padding: 15px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+}
+
+.border-bottom-green{
+  border-radius: 15px;
+  width: 120px;
+  background: #47a44b;
+  height: 4px;
+  display: block;
+  margin-top: 10px;
+}
+
+ #introductory-heading{
+  color: #47a44b;
+  font-weight: bolder;
+  font-size: 35px;
+}
+
+#carousel-div .owl-carousel .owl-dots{
+  display: none;
+}
+
+#carousel-div .owl-carousel img{
+  height: 350px;
+  width: 100%;
+}
+
+#first-left-sidebar .list-group-item-action:hover{
+  background: #cce3ba;
+  color: #84b464;
+}
+
+#first-left-sidebar .list-group-item-action : active{
+  background: #b3dc94;
+}
+
+.list-group-item-custom {
+  /*color: #155724;*/
+  background-color: #47a44b;
+}
+#first-left-sidebar .list-group-item-action{
+  color: #fff;
+  transition: 2s;
+}
+
+#first-left-sidebar .list-group-item-action i.fas{
+  font-size: 11px;
+  
+}
+
+#first-left-sidebar .list-group-item-action span{
+  
+  font-weight: bold;
+  font-size: 17px;
+}
+
+#navbarResponsive ul li.nav-item  a{
+  color: #fff;
+  font-size: 15px;
+  transition: 2s;
+}
+
+
+#navbarResponsive ul li.nav-item  a:hover{
+  color: #bbdca5;
+}
+
+body > div > div > div > h1.head{
+  font-size: 43px;
+  text-transform: uppercase;
+}
+
+.sub-head{
+  text-transform: uppercase;
+  border-bottom: 2px solid #FF9900;
+  font-size: 38px;
+  padding-bottom: 20px;
+}
+
+.sub-sub-head{
+  text-transform: uppercase;
+  border-bottom: 2px solid #FF9900;
+  font-size: 30px;
+  padding-bottom: 20px;
+}
+
+#about-us > p.section-text{
+  line-height: 1.7;
+  letter-spacing: 1px;
+  text-transform: capitalize;
+  font-size: 16px;
+}
+.spinner{
+  position: absolute; 
+  right: 25px; 
+  top: 13px;
+  width: 20px;
+    height: 20px;
+    display: none;
+}
+
+.form-error{
+  color: red;
+  font-style: italic;
+  font-size: 15px;
+  font-weight: bold;
+  background-color: #fff;
+}
+.btn-orange{
+  background : #FF9900;
+  color: #fff;
+  border: #FF9900;
+  cursor: pointer;
+  display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    user-select: none;
+    border: 1px solid transparent;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: .25rem;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+        padding: 12px;
+    border-radius: 6px;
+    font-size: 19px;
+
+}
+
+body > div > div > div > button.btn-orange : hover{
+  background : #fff;
+  color: #FF9900;
+  border: #fff;
+  transition: background 2s border 2s;
+}

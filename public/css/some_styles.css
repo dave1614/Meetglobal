@@ -1,0 +1,224 @@
+
+  span.last-message{
+    font-size: 11px;
+    font-style: italic;
+  }
+  #notification_li2
+  {
+  position:relative
+  }
+  #notification_li
+  {
+  position:relative
+  }
+  #notificationContainer 
+  {
+    background-color: #fff;
+    border: 1px solid rgba(100, 100, 100, .4);
+    -webkit-box-shadow: 0 3px 8px rgba(0, 0, 0, .25);
+    overflow: visible;
+    position: absolute;
+    top: 40px;
+    /*margin-left: -170px;*/
+    right: -12px;
+    width: 400px;
+    z-index: -1;
+    /*display: none; // Enable this after jquery implementation */
+  }
+  #notificationContainer2
+  {
+    background-color: #fff;
+    border: 1px solid rgba(100, 100, 100, .4);
+    -webkit-box-shadow: 0 3px 8px rgba(0, 0, 0, .25);
+    overflow: visible;
+    position: absolute;
+    top: 40px;
+    /*margin-left: -170px;*/
+    right: -12px;
+    width: 400px;
+    z-index: -1;
+    /*display: none; // Enable this after jquery implementation */
+  }
+      
+  #notificationContainer:before {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 0;
+    height: 0;
+    color: transparent;
+    border: 10px solid black;
+    border-color: transparent transparent white;
+    margin-top: -20px;
+    margin-left: 188px;
+  }
+      
+  #notificationContainer2:before {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 0;
+    height: 0;
+    color: transparent;
+    border: 10px solid black;
+    border-color: transparent transparent white;
+    margin-top: -20px;
+    margin-left: 188px;
+  }
+  #notificationTitle
+  {
+    font-weight: bold;
+    padding: 8px;
+    font-size: 13px;
+    background-color: #ffffff;
+    position: fixed;
+    z-index: 1000;
+    width: 384px;
+    border-bottom: 1px solid #dddddd;
+  }
+
+  #notificationTitle2
+  {
+    font-weight: bold;
+    padding: 8px;
+    font-size: 13px;
+    background-color: #ffffff;
+    position: fixed;
+    z-index: 1000;
+    width: 384px;
+    border-bottom: 1px solid #dddddd;
+  }
+  #notificationsBody
+  {
+    padding: 0px 0px 0px 0px !important;
+    margin-top: 48px;
+    min-height:300px;
+  }
+
+  #notificationsBody2
+  {
+    padding: 0px 0px 0px 0px !important;
+    margin-top: 48px;
+    min-height:300px;
+  }
+
+
+  #notificationsBody p{
+    font-size: 13px;
+    font-weight: bold;
+  }
+  #notificationsBody span{
+    font-size: 12px;
+    /*font-weight: bold;*/
+  }
+
+  #notificationsBody2 p{
+    font-size: 13px;
+    font-weight: bold;
+  }
+  #notificationsBody2 span{
+    font-size: 12px;
+    /*font-weight: bold;*/
+  }
+
+  #notificationFooter
+  {
+  background-color: #e9eaed;
+  text-align: center;
+  font-weight: bold;
+  padding: 8px;
+  font-size: 12px;
+  border-top: 1px solid #dddddd;
+  }
+
+
+
+  #notification_count 
+  {
+  padding: 3px 7px 3px 7px;
+  background: #cc0000;
+  color: #ffffff;
+  font-weight: bold;
+  margin-left: 77px;
+  border-radius: 9px;
+  -moz-border-radius: 9px; 
+  -webkit-border-radius: 9px;
+  position: absolute;
+  margin-top: -11px;
+  font-size: 11px;
+  }
+
+  #notificationsBody .avatar img{
+     border-radius: 50%;
+     width: 50px;
+     height: 50px;
+  }
+  #notificationsBody .message-sender .sender-name{
+    margin-bottom: 3px;
+  }
+  #notificationsBody .conversation{
+    cursor: pointer;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #dddddd;
+  }
+  #notificationsBody .conversation:hover{
+    background-image: linear-gradient(rgba(29, 33, 41, .04), rgba(29, 33, 41, .04));
+  }
+  #notificationsBody .container{
+    max-height: 300px;
+    overflow-y: scroll;
+  }
+
+
+  #notificationsBody2 .avatar img{
+     border-radius: 50%;
+     width: 50px;
+     height: 50px;
+  }
+  #notificationsBody2 .message-sender .sender-name{
+    margin-bottom: 3px;
+  }
+  #notificationsBody2 .conversation{
+    height: 80px;
+    cursor: pointer;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-bottom: 2px solid #F0F0F0 ;
+  }
+  #notificationsBody2 .conversation:hover{
+    background-image: linear-gradient(rgba(29, 33, 41, .04), rgba(29, 33, 41, .04));
+  }
+  #notificationsBody2 .container{
+    max-height: 300px;
+    overflow-y: scroll;
+  }
+
+  span.new-message-num.notification{
+    right: -11px;
+    top: -8px;
+  }
+
+  #notificationsBody  .small-loader{
+    width: 30px;
+    height: 30px;
+    /*display: none;*/
+  }
+
+  .follow-loader{
+    width:20px;
+    margin-left: 13px;
+    display: none;
+  }
+
+  .post-time-display{
+    font-size: 12px;
+    font-weight: bold;
+    font-style: italic;
+    color: #707070;
+  }
+
+  span.big-content,p{
+    white-space: pre-line;
+  }
+        
